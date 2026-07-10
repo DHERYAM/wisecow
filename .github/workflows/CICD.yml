@@ -19,7 +19,7 @@ jobs:
 
       - name: build and push 
         uses: docker/build-push-action@v7
-        with
+        with:
             context: .
             file: ./Dockerfile
             push: true
