@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: wisecow
+  namespace: namespace-wisecow
+spec:
+  containers:
+  - name: wisecow
+    image: docker.io/dheryam/wisecow:latest
+    ports:
+    - containerPort: 4499
