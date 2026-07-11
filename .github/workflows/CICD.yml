@@ -2,8 +2,10 @@ name: CICD
 # run 
 
 on:
-  push:
-    branches: [ "master" ] # trigger when i will push to master
+  workflow_dispatch:
+    
+  #push:
+    #branches: [ "master" ] # trigger when i will push to master
 
 jobs:
   build:
