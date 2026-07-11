@@ -2,14 +2,14 @@ name: CICD
 # run 
 
 on:
-  workflow_dispatch:
+
     
-  #push:
-    #branches: [ "master" ] # trigger when i will push to master
+  push:
+    branches: [ "master" ] # trigger when i will push to master
 
 jobs:
   build:
-    runs-on: ubuntu:latest
+    runs-on: ubuntu-latest
 
     steps:
       - name: Checkout repository
