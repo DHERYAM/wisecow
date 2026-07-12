@@ -1,0 +1,16 @@
+apiVersion: ://kubearmor.com
+kind: KubeArmorPolicy
+metadata:
+  name: wisecow-secure-policy
+  namespace: wisecow
+spec:
+  severity: 5
+  selector:
+    matchLabels:
+      app: wisecow
+  process:
+    matchPaths:
+    - path: /usr/bin/apk
+    - path: /sbin/apk
+    action: Block
+
